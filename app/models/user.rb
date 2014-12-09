@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-	 has_attached_file  :image, :styles => {
+	 has_attached_file  :attachment, :styles => {
         :thumb  => "100x100",
         :medium => "200x200",
         :large => "600x400"
