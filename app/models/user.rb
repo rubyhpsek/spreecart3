@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
      :path => "/:style/:id/:filename",
      :url  => ":s3_eu_url" # if you're using eu buckets, call it s3_eu_url
 
-     validates_attachment_content_type :image, :content_type => /\Aimage\/.*\Z/
+     validates_attachment_content_type :attachment, :content_type => /\Aimage\/.*\Z/
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable,
